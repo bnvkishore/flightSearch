@@ -127,7 +127,6 @@ export default {
       return [minVal, maxVal]
     },
     getReturnPriceRange() {
-      console.log('returnFlight', this.returnFlightsList)
       const minVal =
         Object.keys(this.returnFlightsList).length > 0 &&
         this.returnFlightsList.Quotes[0]?.MinPrice
