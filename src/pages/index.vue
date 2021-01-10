@@ -210,7 +210,10 @@ export default {
       if (val === 'oneway') {
         this.form.arrivalDate = 'One Way'
       } else {
-        this.form.arrivalDate = format(parseISO(new Date().toISOString()), 'yyyy-MM-dd')
+        this.form.arrivalDate = format(
+          parseISO(new Date().toISOString()),
+          'yyyy-MM-dd'
+        )
       }
     },
   },
